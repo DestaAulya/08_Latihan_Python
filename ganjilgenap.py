@@ -1,10 +1,17 @@
-# Program menentukan angka ganjil atau genap
+def cek_ganjil_genap(angka):
+    if angka % 2 == 0:
+        print(f"{angka} adalah bilangan genap")
+    else:
+        print(f"{angka} adalah bilangan ganjil")
 
-# Input angka
-angka = int(input("Masukkan sebuah angka: "))
 
-# Cek ganjil atau genap
-if angka % 2 == 0:
-    print(angka, "adalah bilangan genap")
-else:
-    print(angka, "adalah bilangan gl")
+while True:
+    angka = int(input("Masukkan sebuah angka: "))
+
+    cek_ganjil_genap(angka)
+
+    pilihan = input("Apakah ingin lanjut y/n: ").lower()
+
+    if pilihan == 'n':
+        print("Program selesai. Terima kasih.")
+        break
